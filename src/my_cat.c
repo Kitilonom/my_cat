@@ -19,7 +19,7 @@
 // -t предполагает и -v                          также отображает табы как ^I
 // (GNU: -T то же самое, но без применения -v)
 
-void s21_cat(int argc, char *argv[]);
+void my_cat(int argc, char *argv[]);
 
 void cat_file(int count_file,  char name_file[200][200], \
                int number_nonblank, int number_all, int squeeze_blank, int tab_print, int end_str);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-void s21_cat(int argc, char *argv[]) {
+void my_cat(int argc, char *argv[]) {
     int number_nonblank = 0;
     int end_str = 0;
     int number_all = 0;
